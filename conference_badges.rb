@@ -28,6 +28,6 @@ end
 =end
 
 def printer(speakers)
-  puts batch_badge_creator(speakers)
-  puts assign_rooms(speakers)
+  batch_badge_creator(speakers).each {|badge|puts badge}
+  assign_rooms(speakers).each {|assignment|puts assignment}
 end
