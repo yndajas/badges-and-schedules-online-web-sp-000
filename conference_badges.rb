@@ -28,6 +28,6 @@ end
 =end
 
 def printer(speakers)
-  puts batch_badge_creator(speakers)
+  speakers.each puts batch_badge_creator(speakers)
   puts assign_rooms(speakers)
 end
